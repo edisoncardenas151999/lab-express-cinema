@@ -1,0 +1,16 @@
+
+<h1>{{movie.title}}</h1>
+<hr>
+{{#if movie.image}}
+                <img src="{{movie.image}}" alt="{{this.name}}">
+            {{else}}
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTShkml07IJkqm-kVI9W2XwnbaIUbVbKQVIPw&usqp=CAU"
+                    alt="{{this.name}}" style="width: 160px">
+            {{/if}}    <h3>{{title}} </h3>
+<p>director: {{movie.director}}</p>
+<p>Stars {{movie.stars}}</p>
+<p>description {{movie.description}}</p>
+<hr>
+<a href="/movies">Back</a>
+
+

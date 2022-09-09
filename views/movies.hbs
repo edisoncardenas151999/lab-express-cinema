@@ -1,0 +1,16 @@
+
+
+
+
+{{#each movies}}
+  <div>
+    <br>
+{{#if image}}
+                <img src="{{image}}" alt="{{this.name}}">
+            {{else}}
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTShkml07IJkqm-kVI9W2XwnbaIUbVbKQVIPw&usqp=CAU"
+                    alt="{{this.name}}" style="width: 160px">
+            {{/if}}    <h3>{{title}} </h3>
+    <a href="/movie/{{_id}}">See more</a> 
+  </div>
+{{/each}}
